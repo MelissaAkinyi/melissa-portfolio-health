@@ -41,7 +41,17 @@ export const flagshipProjects: FlagshipProject[] = [
           },
         ],
       },
-      Engineering: { status: "Not started" },
+      Engineering: {
+        status: "Complete",
+        summary:
+          "An interactive tool applying Multi-Criteria Decision Analysis to the three strategic investment priorities from the Executive Summary, letting a visitor adjust criteria weights and see the recommendation re-rank live.",
+        outputs: [
+          {
+            label: "Investment Priority Scoring Tool",
+            href: "/digital-health-projects/state-of-kenyas-health-system-2026/engineering",
+          },
+        ],
+      },
       "Thought Leadership": { status: "Not started" },
     },
   },
