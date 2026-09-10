@@ -80,7 +80,7 @@ export type LayerStatus = "Not started" | "In progress" | "Complete";
 export interface FlagshipLayer {
   status: LayerStatus;
   summary?: string;
-  outputs?: string[];
+  outputs?: { label: string; href?: string }[];
 }
 
 export interface FlagshipProject {

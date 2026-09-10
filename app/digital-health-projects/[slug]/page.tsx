@@ -98,16 +98,28 @@ export default function FlagshipProjectDetailPage({
                   </p>
                 )}
 
-                {layer.outputs && layer.outputs.length > 0 && (
+                                {layer.outputs && layer.outputs.length > 0 && (
                   <ul className="mt-4 space-y-1.5">
-                    {layer.outputs.map((o) => (
-                      <li
-                        key={o}
-                        className="font-mono text-[13px] text-teal-deep"
-                      >
-                        {o}
-                      </li>
-                    ))}
+                    {layer.outputs.map((o) =>
+                      o.href ? (
+                        <li key={o.label}>
+                          <Link
+                            href={o.href}
+                            className="link-underline font-mono text-[13px] text-teal-deep"
+                            target={o.href.startsWith("/") ? undefined : "_blank"}
+                          >
+                            {o.label} ↓
+                          </Link>
+                        </li>
+                      ) : (
+                        <li
+                          key={o.label}
+                          className="font-mono text-[13px] text-teal-deep"
+                        >
+                          {o.label}
+                        </li>
+                      )
+                    )}
                   </ul>
                 )}
               </div>

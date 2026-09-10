@@ -11,14 +11,29 @@ const emptyLayers = (): FlagshipProject["layers"] => ({
 });
 
 export const flagshipProjects: FlagshipProject[] = [
-  {
+   {
     slug: "state-of-kenyas-health-system-2026",
     number: 1,
     title: "State of Kenya's Health System 2026",
     objective:
       "National health-system performance, county comparisons, international benchmarking and strategic investment priorities.",
-    status: "Concept Development",
-    layers: emptyLayers(),
+    status: "Ongoing",
+    layers: {
+      Executive: {
+        status: "Complete",
+        summary:
+          "A researched executive brief covering national performance indicators, the NHIF-to-SHA transition, county-level workforce and access disparities, and benchmarking against Rwanda and Ghana — closing with three evidence-based investment priorities.",
+        outputs: [
+          {
+            label: "Executive Summary (PDF)",
+            href: "/reports/state-of-kenyas-health-system-2026-executive-summary.pdf",
+          },
+        ],
+      },
+      Analytics: { status: "Not started" },
+      Engineering: { status: "Not started" },
+      "Thought Leadership": { status: "Not started" },
+    },
   },
   {
     slug: "national-digital-health-investment-strategy",
