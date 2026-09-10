@@ -41,13 +41,10 @@ export default function CvPage() {
         </a>
       </div>
 
-      <p className="mt-6 max-w-prose text-ink-muted">
-        The button above links to a placeholder file at{" "}
-        <code className="rounded bg-paper-alt px-1.5 py-0.5 font-mono text-sm">
-          /public/cv/melissa-akinyi-cv.pdf
-        </code>
-        . Replace it with a real PDF — see the README for instructions.
-      </p>
+            {/*
+        DEV NOTE: the button above links to /public/cv/melissa-akinyi-cv.pdf.
+        Replace that file with the real CV PDF — see README for instructions.
+      */}
 
       <div className="mt-14 divide-y divide-line border-t border-line">
         {sections.map((s) => (

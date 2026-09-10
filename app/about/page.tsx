@@ -78,10 +78,11 @@ export default function AboutPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-4 text-xs text-ink-faint">
-            Placeholder links &mdash; update once profiles are live. See the
-            README for instructions.
-          </p>
+                    {/*
+            DEV NOTE: profile links above are placeholders (href: "#").
+            Update once profiles are live — see README: "Connecting Google
+            Scholar / ORCID / LinkedIn".
+          */}
 
           <p className="eyebrow mb-4 mt-12">Based in</p>
           <p className="text-ink-muted">Nairobi, Kenya</p>
