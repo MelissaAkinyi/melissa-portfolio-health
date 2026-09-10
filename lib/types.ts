@@ -63,3 +63,31 @@ export interface ResearchArea {
   summary: string;
   focus: string[];
 }
+/**
+ * Flagship Projects — executive-level work spanning health systems &
+ * digital transformation. Each project is built across four layers
+ * (Executive, Analytics, Engineering, Thought Leadership), reflecting
+ * the Analyse → Advise → Build framing of this body of work.
+ */
+export type FlagshipLayerKey =
+  | "Executive"
+  | "Analytics"
+  | "Engineering"
+  | "Thought Leadership";
+
+export type LayerStatus = "Not started" | "In progress" | "Complete";
+
+export interface FlagshipLayer {
+  status: LayerStatus;
+  summary?: string;
+  outputs?: string[];
+}
+
+export interface FlagshipProject {
+  slug: string;
+  number: number;
+  title: string;
+  objective: string;
+  status: ProjectStatus;
+  layers: Record<FlagshipLayerKey, FlagshipLayer>;
+}
