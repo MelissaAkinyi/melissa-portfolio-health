@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   FlagshipProject,
   FlagshipLayerKey,
@@ -32,7 +33,15 @@ export default function FlagshipProjectCard({
         <StatusBadge status={project.status} />
       </div>
 
-      <h3 className="mt-4 font-serif text-xl text-ink">{project.title}</h3>
+            <h3 className="mt-4 font-serif text-xl text-ink">
+        <Link
+          href={`/digital-health-projects/${project.slug}`}
+          className="link-underline"
+        >
+          {project.title}
+        </Link>
+      </h3>
+
       <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-muted">
         {project.objective}
       </p>
@@ -55,9 +64,17 @@ export default function FlagshipProjectCard({
                 {layer.status}
               </span>
             </li>
-          );
+                   );
         })}
+    
       </ul>
+
+      <Link
+        href={`/digital-health-projects/${project.slug}`}
+        className="link-underline mt-6 font-mono text-[11px] uppercase tracking-widest2 text-teal-deep"
+      >
+        View details →
+      </Link>
     </article>
   );
 }
