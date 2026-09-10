@@ -35,14 +35,29 @@ export const flagshipProjects: FlagshipProject[] = [
       "Thought Leadership": { status: "Not started" },
     },
   },
-  {
+   {
     slug: "national-digital-health-investment-strategy",
     number: 2,
     title: "National Digital Health Investment Strategy",
     objective:
       "Evaluate EHRs, telemedicine, tele-rehabilitation, AI and remote monitoring to determine where Kenya should invest.",
-    status: "Concept Development",
-    layers: emptyLayers(),
+    status: "Ongoing",
+    layers: {
+      Executive: {
+        status: "Complete",
+        summary:
+          "A researched brief assessing EHR interoperability, telemedicine, AI-assisted care, remote monitoring and tele-rehabilitation on current readiness in Kenya, with a sequencing table and four investment recommendations — including flagging tele-rehabilitation as a genuine evidence gap rather than a mature area.",
+        outputs: [
+          {
+            label: "Executive Summary (PDF)",
+            href: "/reports/national-digital-health-investment-strategy-executive-summary.pdf",
+          },
+        ],
+      },
+      Analytics: { status: "Not started" },
+      Engineering: { status: "Not started" },
+      "Thought Leadership": { status: "Not started" },
+    },
   },
   {
     slug: "climate-resilience-investment-strategy-nairobi",
