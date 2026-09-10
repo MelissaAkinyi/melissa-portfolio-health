@@ -11,7 +11,7 @@ const emptyLayers = (): FlagshipProject["layers"] => ({
 });
 
 export const flagshipProjects: FlagshipProject[] = [
-   {
+  {
     slug: "state-of-kenyas-health-system-2026",
     number: 1,
     title: "State of Kenya's Health System 2026",
@@ -30,7 +30,7 @@ export const flagshipProjects: FlagshipProject[] = [
           },
         ],
       },
-            Analytics: {
+      Analytics: {
         status: "Complete",
         summary:
           "An interactive dashboard visualising national health indicators, workforce density against the WHO threshold, and the SHA registration and facility enrollment funnels, built from the same sourced figures as the Executive Summary.",
@@ -41,6 +41,12 @@ export const flagshipProjects: FlagshipProject[] = [
           },
         ],
       },
+      Engineering: { status: "Not started" },
+      "Thought Leadership": { status: "Not started" },
+    },
+  },
+  {
+    slug: "national-digital-health-investment-strategy",
     number: 2,
     title: "National Digital Health Investment Strategy",
     objective:
