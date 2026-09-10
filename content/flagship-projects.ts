@@ -30,13 +30,17 @@ export const flagshipProjects: FlagshipProject[] = [
           },
         ],
       },
-      Analytics: { status: "Not started" },
-      Engineering: { status: "Not started" },
-      "Thought Leadership": { status: "Not started" },
-    },
-  },
-   {
-    slug: "national-digital-health-investment-strategy",
+            Analytics: {
+        status: "Complete",
+        summary:
+          "An interactive dashboard visualising national health indicators, workforce density against the WHO threshold, and the SHA registration and facility enrollment funnels, built from the same sourced figures as the Executive Summary.",
+        outputs: [
+          {
+            label: "Analytics Dashboard",
+            href: "/digital-health-projects/state-of-kenyas-health-system-2026/analytics",
+          },
+        ],
+      },
     number: 2,
     title: "National Digital Health Investment Strategy",
     objective:
