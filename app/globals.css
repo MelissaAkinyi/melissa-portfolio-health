@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    background-color: #faf8f3;
+    color: #1e2420;
+  }
+
+  ::selection {
+    background-color: #dce6e5;
+    color: #17363d;
+  }
+
+  :focus-visible {
+    outline: 2px solid #2b5a63;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-widest2 text-teal-deep/70;
+  }
+
+  .container-px {
+    @apply px-6 sm:px-10 lg:px-16;
+  }
+
+  .rule {
+    @apply border-t border-line;
+  }
+
+  .link-underline {
+    @apply relative inline-block;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 0.3s ease;
+  }
+  .link-underline:hover {
+    background-size: 100% 1px;
+  }
+}
+
+/* Pathway diagram node pulse — subtle, reduced-motion safe */
+@keyframes pathway-drift {
+  0%, 100% { stroke-dashoffset: 0; }
+  50% { stroke-dashoffset: -12; }
+}
+.pathway-line {
+  animation: pathway-drift 6s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pathway-line {
+    animation: none;
+  }
+}
