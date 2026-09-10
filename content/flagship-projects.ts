@@ -52,7 +52,17 @@ export const flagshipProjects: FlagshipProject[] = [
           },
         ],
       },
-      "Thought Leadership": { status: "Not started" },
+      "Thought Leadership": {
+        status: "Complete",
+        summary:
+          "A long-form article connecting clinical field experience to the Executive Summary's findings, walking readers through the SHA registration-to-coverage gap and the Investment Priority Scoring Tool, in first person.",
+        outputs: [
+          {
+            label: "Read the article",
+            href: "/digital-health-projects/state-of-kenyas-health-system-2026/thought-leadership",
+          },
+        ],
+      },
     },
   },
   {
