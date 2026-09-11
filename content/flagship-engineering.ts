@@ -25,4 +25,24 @@ export const projectEngineering: ProjectEngineering[] = [
     methodology:
       "Scores (1 to 5) reflect the author's analytical judgment based on the reasoning in the Executive Summary, not measured data — this is intentional: MCDA tools are designed for exactly this kind of decision, where the evidence base is real but not precise enough for a single predictive number. Default weights are equal (3 each); adjust them to see how sensitive the ranking is to what a decision-maker actually cares about.",
   },
+  {
+    slug: "national-digital-health-investment-strategy",
+    toolTitle: "Digital Health Investment Scoring Tool",
+    intro:
+      "The four digital health investment areas assessed in the Executive Summary, scored against four criteria and ranked live as you adjust how much each criterion matters. As with Project 01's tool, this applies Multi-Criteria Decision Analysis (MCDA) rather than a precise predictive model.",
+    criteria: [
+      "Readiness today",
+      "Population reach",
+      "Feasibility",
+      "Evidence strength",
+    ],
+    options: [
+      { name: "EHR & Interoperability", scores: [3, 5, 2, 4] },
+      { name: "Telemedicine", scores: [3, 4, 4, 4] },
+      { name: "Remote Patient Monitoring & AI", scores: [2, 3, 2, 2] },
+      { name: "Tele-rehabilitation", scores: [1, 4, 2, 1] },
+    ],
+    methodology:
+      "Scores (1 to 5) reflect analytical judgment based on the reasoning in the Executive Summary, not measured data. Tele-rehabilitation scores lowest on readiness and evidence strength specifically because a targeted search identified no Kenya-specific evidence, not because the intervention itself is judged ineffective. Default weights are equal (3 each); adjust them to see how the ranking responds to different priorities.",
+  },
 ];

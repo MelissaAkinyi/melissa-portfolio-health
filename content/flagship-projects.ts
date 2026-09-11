@@ -95,7 +95,17 @@ export const flagshipProjects: FlagshipProject[] = [
           },
         ],
       },
-      Engineering: { status: "Not started" },
+      Engineering: {
+        status: "Complete",
+        summary:
+          "An interactive tool applying Multi-Criteria Decision Analysis to the four digital health investment areas from the Executive Summary, letting a visitor adjust criteria weights and see the ranking respond live.",
+        outputs: [
+          {
+            label: "Digital Health Investment Scoring Tool",
+            href: "/digital-health-projects/national-digital-health-investment-strategy/engineering",
+          },
+        ],
+      },
       "Thought Leadership": { status: "Not started" },
     },
   },
