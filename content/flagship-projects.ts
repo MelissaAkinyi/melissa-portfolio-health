@@ -84,7 +84,17 @@ export const flagshipProjects: FlagshipProject[] = [
           },
         ],
       },
-      Analytics: { status: "Not started" },
+      Analytics: {
+        status: "Complete",
+        summary:
+          "A dashboard presenting Africa's digital health market trajectory alongside Kenya's urban-rural connectivity gap, providing the infrastructure context behind the telemedicine and remote monitoring assessment in the Executive Summary.",
+        outputs: [
+          {
+            label: "Analytics Dashboard",
+            href: "/digital-health-projects/national-digital-health-investment-strategy/analytics",
+          },
+        ],
+      },
       Engineering: { status: "Not started" },
       "Thought Leadership": { status: "Not started" },
     },

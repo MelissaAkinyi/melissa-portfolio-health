@@ -80,4 +80,39 @@ export const projectAnalytics: ProjectAnalytics[] = [
     sources:
       "KNBS 2021; Kenya MoH Health Sector Report (National Treasury MTEF); PMC9422806 Kenya Health Labour Market Analysis 2023; Daily Nation, Jan 2026; Kenya Parliament Health Committee roundtable, Nov 2025; IEA Kenya SHA assessment, Mar 2026.",
   },
+  {
+    slug: "national-digital-health-investment-strategy",
+    methodology:
+      "This dashboard presents publicly reported market and connectivity figures relevant to the four investment areas assessed in the Executive Summary. It is a macro-level view of market context and infrastructure constraints, not a cost model or Kenya-specific digital health market sizing, which was not identified in available public sources.",
+    statCards: [
+      { label: "Africa digital health market (2025)", value: "5.58", unit: "USD billion" },
+      { label: "Projected by 2029", value: "7.59", unit: "USD billion" },
+      { label: "Separate health information systems", value: "49", unit: "MoH + 47 counties + SHA" },
+      { label: "Digital health policy iteration", value: "15", unit: "years (2009–2023)" },
+    ],
+    barCharts: [
+      {
+        title: "Internet Usage: Urban vs Rural Kenya",
+        unit: "% of population, 3-month usage",
+        data: [
+          { label: "Urban", value: 57 },
+          { label: "National average", value: 35, isReference: true },
+          { label: "Rural", value: 25 },
+        ],
+        sourceNote: "Communications Authority of Kenya / KNBS, 2023/24 Kenya Housing Survey",
+      },
+      {
+        title: "Mobile Phone Ownership: Urban vs Rural Kenya",
+        unit: "% of population",
+        data: [
+          { label: "Urban", value: 64.6 },
+          { label: "National average", value: 53.7, isReference: true },
+          { label: "Rural", value: 48.6 },
+        ],
+        sourceNote: "Communications Authority of Kenya / KNBS, 2023/24 Kenya Housing Survey",
+      },
+    ],
+    sources:
+      "Statista Digital Health Africa Market Forecast (2025); Communications Authority of Kenya / KNBS, 2023/24 Kenya Housing Survey (KICTANet analysis, Jan 2025); PMC12165431 Homa Bay digital health landscape assessment.",
+  },
 ];
