@@ -106,7 +106,17 @@ export const flagshipProjects: FlagshipProject[] = [
           },
         ],
       },
-      "Thought Leadership": { status: "Not started" },
+      "Thought Leadership": {
+        status: "Complete",
+        summary:
+          "An article sequencing the four digital health investment areas from the Executive Summary, connecting the connectivity data from the Analytics dashboard and the reasoning behind the Engineering tool's scores, including a personal note on the tele-rehabilitation evidence gap.",
+        outputs: [
+          {
+            label: "Read the article",
+            href: "/digital-health-projects/national-digital-health-investment-strategy/thought-leadership",
+          },
+        ],
+      },
     },
   },
   {
