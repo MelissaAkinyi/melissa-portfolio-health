@@ -14,41 +14,33 @@ export const projectArticles: ProjectArticle[] = [
   {
     slug: "state-of-kenyas-health-system-2026",
     title:
-      "What would it actually take to fix Kenya's health system? A look at the numbers",
-    dek: "Six clinical rotations taught me where the gaps are. The data taught me why closing them is harder than it looks.",
-    readingTime: "7 min read",
+      "What would it take to improve Kenya's health system? A look at the evidence",
+    dek: "Clinical rotations showed where the disparities are. The data clarifies why they are difficult to close.",
+    readingTime: "6 min read",
     paragraphs: [
       {
         type: "p",
-        text: "During my final year of physiotherapy training, I rotated through five different departments in two counties: outpatient rehabilitation in Mombasa, orthopaedics, neurology, paediatrics, and cardiopulmonary care in Nairobi. Nothing in a textbook prepares you for the gap between what good rehabilitation looks like on paper and what it looks like when the nearest specialist is a day's travel away. I didn't have language for that gap at the time. I just had the patients in front of me.",
-      },
-      {
-        type: "p",
-        text: "This year I went looking for that language in the data, as part of a broader shift toward health systems strategy and digital health work. What I found didn't surprise the clinician in me. It did surprise the analyst.",
+        text: "During clinical rotations across five departments in two counties, outpatient rehabilitation in Mombasa, orthopaedics, neurology, paediatrics, and cardiopulmonary care in Nairobi, differences in caseload, equipment, and specialist availability between facilities were consistently observable. This piece examines whether national data corroborates that observation, and what it implies for investment sequencing.",
       },
       {
         type: "h2",
-        text: "The two-Kenya problem, in numbers",
+        text: "Workforce distribution",
       },
       {
         type: "p",
-        text: "Kenya's national health workforce density sits at roughly 30 doctors, nurses and clinical officers per 10,000 people, against a WHO threshold of 44.5. That single national number already tells you the country is understaffed. It does not tell you that roughly half of Kenya's specialist physicians work in just three cities, Nairobi, Mombasa and Kisumu, or that Turkana has approximately one doctor for every 70,000 residents. The national average and the lived reality in Turkana are, for practical purposes, describing two different health systems.",
-      },
-      {
-        type: "p",
-        text: "I saw a version of this pattern during my own rotations, though at a smaller scale: the difference in caseload, equipment, and specialist availability between a teaching hospital in Mombasa and a county hospital in Nairobi was already noticeable. Multiply that gap by the distance between Nairobi and Turkana, and you start to understand why national indicators can improve steadily, as Kenya's have, while millions of people still experience a health system that is functionally failing them.",
+        text: "Kenya's national health workforce density is approximately 30 doctors, nurses and clinical officers per 10,000 population, against a WHO threshold of 44.5. This national figure understates the degree of geographic variation: roughly half of the country's specialist physicians are concentrated in three cities, Nairobi, Mombasa and Kisumu, and workforce density in Turkana is estimated at approximately one doctor per 70,000 residents. National averages and county-level figures describe substantially different conditions of access.",
       },
       {
         type: "h2",
-        text: "A financing reform that is working, and straining, at the same time",
+        text: "The SHA transition: registration versus functioning coverage",
       },
       {
         type: "p",
-        text: "Kenya's shift from NHIF to the Social Health Authority is genuinely ambitious, and by registration numbers alone, it looks like a success: over 19 million people signed up within its first year. But registration is not coverage. Only about 3.3 million of those registrants have completed means testing, the step that actually determines what they pay and what they are entitled to. And SHA owed healthcare providers roughly 30 billion shillings in pending bills as of late 2025, a debt inherited largely from the old NHIF system.",
+        text: "Kenya's transition from NHIF to the Social Health Authority shows a marked difference between registration and verified coverage. Over 19 million people had registered within the scheme's first year, but only approximately 3.3 million had completed the means-testing process that determines premium level and entitlement. SHA reported approximately 30 billion shillings in pending bills owed to providers as of late 2025, a liability largely carried over from NHIF.",
       },
       {
         type: "p",
-        text: "I built an interactive dashboard laying out these numbers alongside Kenya's core health indicators, because I think this specific gap, between registration and functioning coverage, is the most consequential and least discussed part of the SHA transition. You can look at it directly here.",
+        text: "An interactive dashboard presenting these figures alongside Kenya's core health indicators is available below.",
         link: {
           label: "View the analytics dashboard →",
           href: "/digital-health-projects/state-of-kenyas-health-system-2026/analytics",
@@ -56,27 +48,27 @@ export const projectArticles: ProjectArticle[] = [
       },
       {
         type: "h2",
-        text: "Where these arguments usually go wrong",
+        text: "Prioritisation under budget constraint",
       },
       {
         type: "p",
-        text: "Most conversations I have encountered about fixing Kenya's health system arrive at the same conclusion: invest more. That is not wrong, but it is not useful either. It skips the actual decision, which is not whether to invest, but where the next shilling should go first, given that workforce deployment, provider payment infrastructure, and means-testing throughput cannot all be fixed simultaneously with a constrained budget.",
+        text: "A common response to these findings is to recommend increased investment generally. This does not resolve the operative question, which is sequencing: workforce deployment, provider payment infrastructure, and means-testing throughput cannot all be addressed simultaneously within a constrained budget, so some ordering is required.",
       },
       {
         type: "p",
-        text: "This is a sequencing problem, and sequencing problems have a name in health policy: priority setting under constraint. The World Health Organization's CAPACITI tool and the World Bank's Health Interventions Prioritization Tool exist because health ministries face this exact problem constantly, and because a defensible answer requires making the trade-offs explicit rather than pretending there is one objectively correct list.",
+        text: "This is a recognised category of problem in health policy, typically addressed through Multi-Criteria Decision Analysis (MCDA). The World Health Organization's CAPACITI tool and the World Bank's Health Interventions Prioritization Tool apply this method to comparable prioritisation problems in other countries, making trade-offs explicit rather than presenting a single predictive ranking.",
       },
       {
         type: "h2",
-        text: "A tool, not a verdict",
+        text: "An interactive prioritisation tool",
       },
       {
         type: "p",
-        text: "I built a small interactive version of this method for Kenya's three most urgent near-term investment priorities: clearing SHA's provider payment backlog, deploying health workers to the most understaffed counties, and closing the means-testing gap. Each priority is scored against four criteria, equity impact, urgency, feasibility, and cost efficiency, using my own analytical judgment grounded in the evidence above, not a precise predictive model I do not have the data to build honestly.",
+        text: "An interactive version of this method was built for three near-term investment priorities identified in the accompanying Executive Summary: clearing the SHA provider payment backlog, workforce deployment to understaffed counties, and closing the means-testing gap. Each is scored against four criteria, equity impact, urgency, feasibility, and cost efficiency. The scores reflect analytical judgment based on the evidence summarised above, not a measured or predictive dataset.",
       },
       {
         type: "p",
-        text: "What the tool actually demonstrates is more interesting than a fixed ranking: if you weight equity most heavily, capacity-weighted workforce deployment, the hardest and slowest intervention, rises to the top. If you weight urgency and feasibility instead, clearing the SHA payment backlog wins, because it is largely an administrative fix rather than a multi-year workforce migration problem. Neither answer is wrong. They represent different, entirely legitimate values about what a health system should optimize for first. You can try adjusting the weights yourself.",
+        text: "The ranking is sensitive to how the criteria are weighted. Weighting equity impact most heavily moves capacity-weighted workforce deployment to the top of the ranking, the intervention with the longest implementation timeline. Weighting urgency and feasibility instead favours clearing the payment backlog, which is largely an administrative rather than an infrastructural intervention. Both weightings are internally consistent; they reflect different priorities rather than different readings of the evidence.",
         link: {
           label: "Try the Investment Priority Scoring Tool →",
           href: "/digital-health-projects/state-of-kenyas-health-system-2026/engineering",
@@ -84,15 +76,11 @@ export const projectArticles: ProjectArticle[] = [
       },
       {
         type: "h2",
-        text: "What I actually think, held loosely",
+        text: "A tentative conclusion",
       },
       {
         type: "p",
-        text: "If I had to commit to one answer: I would clear the payment backlog first, not because equity matters less to me, but because a health financing system that providers do not trust cannot deliver equity to anyone, however well the workforce is deployed. But I hold that conclusion loosely, and I think that is the honest position for anyone doing this kind of analysis. The scores in my tool are transparent about being judgment, not measurement, and I would rather show my reasoning and let it be challenged than present a false certainty.",
-      },
-      {
-        type: "p",
-        text: "That, more than any specific number in this piece, is what six clinical rotations and a growing interest in health systems strategy have taught me to value: not the appearance of a settled answer, but a clearly reasoned, falsifiable one.",
+        text: "Under the default equal weighting, clearing the SHA payment backlog scores highest, primarily on feasibility and urgency grounds: a financing system that providers do not trust constrains the effectiveness of investment elsewhere, including workforce deployment. This conclusion is offered with the same caveat that applies to the tool itself, it depends on the weighting applied to competing priorities, and should be treated as a starting point for discussion rather than a settled recommendation.",
       },
     ],
   },

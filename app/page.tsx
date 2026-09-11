@@ -65,12 +65,13 @@ export default function HomePage() {
           <div className="mb-14 max-w-prose">
             <p className="eyebrow mb-3">Research Interests</p>
             <h2 className="font-serif text-3xl text-ink sm:text-4xl">
-              Seven interests, one pathway
+              Research interests
             </h2>
             <p className="mt-4 leading-relaxed text-ink-muted">
-              Each of these areas is a stage in the same question: how
-              healthcare moves from a system, to a service, to a patient&rsquo;s
-              experience of being cared for &mdash; and back again.
+              These areas overlap in practice. How a health system is
+              organised shapes the services it delivers, and that in turn
+              shapes what a patient actually experiences during
+              rehabilitation.
             </p>
           </div>
 
@@ -101,15 +102,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Positioning statement */}
+      {/* Focus */}
       <section className="container-px mx-auto max-w-content py-20">
         <div className="grid gap-10 lg:grid-cols-[0.4fr_0.6fr]">
-          <p className="eyebrow">Positioning</p>
-          <blockquote className="max-w-prose font-serif text-2xl leading-snug text-ink sm:text-3xl">
-            &ldquo;My work sits at the intersection of physiotherapy, health
-            systems, health services research, patient-centred care,
-            healthcare quality, rehabilitation and digital health.&rdquo;
-          </blockquote>
+          <p className="eyebrow">Focus</p>
+          <p className="max-w-prose text-lg leading-relaxed text-ink">
+            My clinical background is in physiotherapy. I&rsquo;m currently
+            building research and analytical experience in health systems and
+            digital health, with the goal of working at the intersection of
+            clinical care and health systems strategy.
+          </p>
         </div>
       </section>
     </>
